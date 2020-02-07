@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaceCell" textLabel="eCW-1H-Ap1" style="IBUITableViewCellStyleDefault" id="wbQ-8w-91c">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PlaceCell" textLabel="eCW-1H-Ap1" detailTextLabel="vbV-6W-Dx5" style="IBUITableViewCellStyleSubtitle" id="wbQ-8w-91c">
                                         <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wbQ-8w-91c" id="RvR-2E-cWW">
@@ -27,9 +27,16 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eCW-1H-Ap1">
-                                                    <rect key="frame" x="20" y="0.0" width="374" height="60"/>
+                                                    <rect key="frame" x="20" y="10" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vbV-6W-Dx5">
+                                                    <rect key="frame" x="20" y="33.5" width="33" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -48,8 +55,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BtJ-xw-N0C"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Places" id="Blq-Bg-eO5"/>
+                    <navigationItem key="navigationItem" title="Places" id="Blq-Bg-eO5">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="map" catalog="system" id="4xp-Zt-CJy">
+                            <connections>
+                                <action selector="showOnMapButtonPressed:" destination="cHA-nL-PhV" id="2Md-zX-NMM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="tableView" destination="Jmh-TL-3UB" id="I6M-xx-qgW"/>
                         <segue destination="pek-0f-egY" kind="show" identifier="ShowOnMap" id="pMV-1d-BcY"/>
                     </connections>
                 </viewController>
@@ -60,7 +74,7 @@
         <!--Apple-->
         <scene sceneID="Fbn-Xe-w4h">
             <objects>
-                <viewController id="pQ2-9C-OiO" sceneMemberID="viewController">
+                <viewController id="pQ2-9C-OiO" customClass="AppleMapsViewController" customModule="Skillbox_m10__Maps_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBx-77-sPl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +94,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Apple" id="nuJ-LN-atK"/>
                     <navigationItem key="navigationItem" id="m1u-mZ-oiY"/>
+                    <connections>
+                        <outlet property="mapView" destination="RoH-r0-PnM" id="WVN-QT-vja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pwp-e4-1Mn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,14 +105,29 @@
         <!--Yandex-->
         <scene sceneID="FML-RM-emm">
             <objects>
-                <viewController id="8N8-HN-6Ie" sceneMemberID="viewController">
+                <viewController id="8N8-HN-6Ie" customClass="YandexMapsViewController" customModule="Skillbox_m10__Maps_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mxx-1n-I6r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-Ym-QbF" customClass="YMKMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Yb0-fl-rQU" firstAttribute="trailing" secondItem="YQd-Ym-QbF" secondAttribute="trailing" id="JVv-4x-XXi"/>
+                            <constraint firstItem="YQd-Ym-QbF" firstAttribute="leading" secondItem="Yb0-fl-rQU" secondAttribute="leading" id="OQH-wT-Ejt"/>
+                            <constraint firstItem="Yb0-fl-rQU" firstAttribute="bottom" secondItem="YQd-Ym-QbF" secondAttribute="bottom" id="gBD-43-MRL"/>
+                            <constraint firstItem="YQd-Ym-QbF" firstAttribute="top" secondItem="Yb0-fl-rQU" secondAttribute="top" id="wKV-uR-QRt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Yb0-fl-rQU"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Yandex" id="thc-Y7-AJE"/>
+                    <connections>
+                        <outlet property="mapView" destination="YQd-Ym-QbF" id="ETG-Uz-kdf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mcG-zH-a8d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,14 +136,29 @@
         <!--Google-->
         <scene sceneID="Y02-uA-hQw">
             <objects>
-                <viewController id="hGd-Sj-0dz" sceneMemberID="viewController">
+                <viewController id="hGd-Sj-0dz" customClass="GoogleMapsViewController" customModule="Skillbox_m10__Maps_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KxG-lk-xGA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f37-v4-MxB" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="f37-v4-MxB" firstAttribute="leading" secondItem="MPg-op-DgQ" secondAttribute="leading" id="EWR-fJ-nNU"/>
+                            <constraint firstItem="MPg-op-DgQ" firstAttribute="bottom" secondItem="f37-v4-MxB" secondAttribute="bottom" id="YYT-57-otN"/>
+                            <constraint firstItem="f37-v4-MxB" firstAttribute="top" secondItem="MPg-op-DgQ" secondAttribute="top" id="vy8-6N-BKT"/>
+                            <constraint firstItem="MPg-op-DgQ" firstAttribute="trailing" secondItem="f37-v4-MxB" secondAttribute="trailing" id="zbr-d5-tpn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MPg-op-DgQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Google" id="ybG-85-kWW"/>
+                    <connections>
+                        <outlet property="mapView" destination="f37-v4-MxB" id="ohy-FM-6dp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ki-IR-uz3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,4 +204,7 @@
             <point key="canvasLocation" x="1453.6231884057972" y="-196.20535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

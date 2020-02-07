@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C0DBB4D23ED6D5900232ED9 /* YMKPoint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0DBB4C23ED6D5900232ED9 /* YMKPoint+.swift */; };
+		7C8976CF23E8BED9001D518E /* GoogleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8976CE23E8BED9001D518E /* GoogleMapsViewController.swift */; };
+		7C8976D123E8BF1A001D518E /* YandexMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8976D023E8BF1A001D518E /* YandexMapsViewController.swift */; };
+		7C8976D523EC2BBE001D518E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8976D423EC2BBE001D518E /* UIColor+.swift */; };
+		7C8976D723EC3FDC001D518E /* CLLocationCoordinate2D+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8976D623EC3FDC001D518E /* CLLocationCoordinate2D+.swift */; };
+		7CCF313C23E8A9C40086B3BC /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF313B23E8A9C40086B3BC /* APIKeys.swift */; };
+		7CCF313E23E8AE050086B3BC /* AppleMapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF313D23E8AE050086B3BC /* AppleMapsViewController.swift */; };
+		7CCF314023E8B11D0086B3BC /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF313F23E8B11D0086B3BC /* Place.swift */; };
+		7CCF314223E8B34A0086B3BC /* PlacesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF314123E8B34A0086B3BC /* PlacesDataSource.swift */; };
+		7CCF314423E8B43A0086B3BC /* PlaceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF314323E8B43A0086B3BC /* PlaceAnnotation.swift */; };
 		7CD2F64F23E89C6A00CD903E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2F64E23E89C6A00CD903E /* AppDelegate.swift */; };
 		7CD2F65123E89C6A00CD903E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2F65023E89C6A00CD903E /* SceneDelegate.swift */; };
 		7CD2F65623E89C6A00CD903E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2F65423E89C6A00CD903E /* Main.storyboard */; };
@@ -14,9 +24,20 @@
 		7CD2F65B23E89C6D00CD903E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CD2F65923E89C6D00CD903E /* LaunchScreen.storyboard */; };
 		7CD2F66423E89DAD00CD903E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CD2F66323E89DAD00CD903E /* MapKit.framework */; };
 		7CD2F66623E8A03F00CD903E /* PlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD2F66523E8A03F00CD903E /* PlacesViewController.swift */; };
+		E9BE75FE053B5EDA86293FD9 /* Pods_Skillbox_m10__Maps_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E169341B34288E0023B0CCC0 /* Pods_Skillbox_m10__Maps_.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C0DBB4C23ED6D5900232ED9 /* YMKPoint+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YMKPoint+.swift"; sourceTree = "<group>"; };
+		7C8976CE23E8BED9001D518E /* GoogleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapsViewController.swift; sourceTree = "<group>"; };
+		7C8976D023E8BF1A001D518E /* YandexMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YandexMapsViewController.swift; sourceTree = "<group>"; };
+		7C8976D423EC2BBE001D518E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		7C8976D623EC3FDC001D518E /* CLLocationCoordinate2D+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+.swift"; sourceTree = "<group>"; };
+		7CCF313B23E8A9C40086B3BC /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIKeys.swift; path = ../APIKeys.swift; sourceTree = "<group>"; };
+		7CCF313D23E8AE050086B3BC /* AppleMapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMapsViewController.swift; sourceTree = "<group>"; };
+		7CCF313F23E8B11D0086B3BC /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		7CCF314123E8B34A0086B3BC /* PlacesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDataSource.swift; sourceTree = SOURCE_ROOT; };
+		7CCF314323E8B43A0086B3BC /* PlaceAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAnnotation.swift; sourceTree = "<group>"; };
 		7CD2F64B23E89C6A00CD903E /* Skillbox_m10 (Maps).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Skillbox_m10 (Maps).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD2F64E23E89C6A00CD903E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CD2F65023E89C6A00CD903E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +47,9 @@
 		7CD2F65C23E89C6D00CD903E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7CD2F66323E89DAD00CD903E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		7CD2F66523E8A03F00CD903E /* PlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesViewController.swift; sourceTree = "<group>"; };
+		C88E55A047D02A79A4EA2662 /* Pods-Skillbox_m10 (Maps).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_m10 (Maps).release.xcconfig"; path = "Target Support Files/Pods-Skillbox_m10 (Maps)/Pods-Skillbox_m10 (Maps).release.xcconfig"; sourceTree = "<group>"; };
+		E169341B34288E0023B0CCC0 /* Pods_Skillbox_m10__Maps_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skillbox_m10__Maps_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5881030E9834F7A51281E9 /* Pods-Skillbox_m10 (Maps).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skillbox_m10 (Maps).debug.xcconfig"; path = "Target Support Files/Pods-Skillbox_m10 (Maps)/Pods-Skillbox_m10 (Maps).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,18 +58,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CD2F66423E89DAD00CD903E /* MapKit.framework in Frameworks */,
+				E9BE75FE053B5EDA86293FD9 /* Pods_Skillbox_m10__Maps_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40E33E06D6C534700D6E65AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA5881030E9834F7A51281E9 /* Pods-Skillbox_m10 (Maps).debug.xcconfig */,
+				C88E55A047D02A79A4EA2662 /* Pods-Skillbox_m10 (Maps).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7C3240E923EDC033002B7DA9 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CD2F66523E8A03F00CD903E /* PlacesViewController.swift */,
+				7CCF313D23E8AE050086B3BC /* AppleMapsViewController.swift */,
+				7C8976CE23E8BED9001D518E /* GoogleMapsViewController.swift */,
+				7C8976D023E8BF1A001D518E /* YandexMapsViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
+		7C3240EA23EDC054002B7DA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C0DBB4C23ED6D5900232ED9 /* YMKPoint+.swift */,
+				7C8976D623EC3FDC001D518E /* CLLocationCoordinate2D+.swift */,
+				7C8976D423EC2BBE001D518E /* UIColor+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7C3240EB23EDC08E002B7DA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CCF313F23E8B11D0086B3BC /* Place.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7CD2F64223E89C6A00CD903E = {
 			isa = PBXGroup;
 			children = (
 				7CD2F64D23E89C6A00CD903E /* Skillbox_m10 (Maps) */,
 				7CD2F64C23E89C6A00CD903E /* Products */,
 				7CD2F66223E89DAD00CD903E /* Frameworks */,
+				40E33E06D6C534700D6E65AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,7 +125,11 @@
 			isa = PBXGroup;
 			children = (
 				7CD2F65423E89C6A00CD903E /* Main.storyboard */,
-				7CD2F66523E8A03F00CD903E /* PlacesViewController.swift */,
+				7C3240E923EDC033002B7DA9 /* View controllers */,
+				7C3240EA23EDC054002B7DA9 /* Extensions */,
+				7CCF314323E8B43A0086B3BC /* PlaceAnnotation.swift */,
+				7CCF314123E8B34A0086B3BC /* PlacesDataSource.swift */,
+				7C3240EB23EDC08E002B7DA9 /* Model */,
 				7CD2F66723E8A05C00CD903E /* Supporting files */,
 				7CD2F65C23E89C6D00CD903E /* Info.plist */,
 			);
@@ -72,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7CD2F66323E89DAD00CD903E /* MapKit.framework */,
+				E169341B34288E0023B0CCC0 /* Pods_Skillbox_m10__Maps_.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,6 +148,7 @@
 		7CD2F66723E8A05C00CD903E /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
+				7CCF313B23E8A9C40086B3BC /* APIKeys.swift */,
 				7CD2F64E23E89C6A00CD903E /* AppDelegate.swift */,
 				7CD2F65023E89C6A00CD903E /* SceneDelegate.swift */,
 				7CD2F65723E89C6D00CD903E /* Assets.xcassets */,
@@ -94,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CD2F65F23E89C6D00CD903E /* Build configuration list for PBXNativeTarget "Skillbox_m10 (Maps)" */;
 			buildPhases = (
+				1CF12B375C7F19B55A1242C1 /* [CP] Check Pods Manifest.lock */,
 				7CD2F64723E89C6A00CD903E /* Sources */,
 				7CD2F64823E89C6A00CD903E /* Frameworks */,
 				7CD2F64923E89C6A00CD903E /* Resources */,
+				B5BE5D08896A00A2911097F4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,14 +225,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CF12B375C7F19B55A1242C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skillbox_m10 (Maps)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5BE5D08896A00A2911097F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox_m10 (Maps)/Pods-Skillbox_m10 (Maps)-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skillbox_m10 (Maps)/Pods-Skillbox_m10 (Maps)-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skillbox_m10 (Maps)/Pods-Skillbox_m10 (Maps)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7CD2F64723E89C6A00CD903E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CCF314423E8B43A0086B3BC /* PlaceAnnotation.swift in Sources */,
 				7CD2F66623E8A03F00CD903E /* PlacesViewController.swift in Sources */,
+				7C8976D123E8BF1A001D518E /* YandexMapsViewController.swift in Sources */,
 				7CD2F64F23E89C6A00CD903E /* AppDelegate.swift in Sources */,
+				7C8976D523EC2BBE001D518E /* UIColor+.swift in Sources */,
+				7C0DBB4D23ED6D5900232ED9 /* YMKPoint+.swift in Sources */,
+				7CCF314223E8B34A0086B3BC /* PlacesDataSource.swift in Sources */,
+				7CCF313C23E8A9C40086B3BC /* APIKeys.swift in Sources */,
+				7CCF314023E8B11D0086B3BC /* Place.swift in Sources */,
+				7CCF313E23E8AE050086B3BC /* AppleMapsViewController.swift in Sources */,
+				7C8976D723EC3FDC001D518E /* CLLocationCoordinate2D+.swift in Sources */,
 				7CD2F65123E89C6A00CD903E /* SceneDelegate.swift in Sources */,
+				7C8976CF23E8BED9001D518E /* GoogleMapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +426,7 @@
 		};
 		7CD2F66023E89C6D00CD903E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA5881030E9834F7A51281E9 /* Pods-Skillbox_m10 (Maps).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +445,7 @@
 		};
 		7CD2F66123E89C6D00CD903E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C88E55A047D02A79A4EA2662 /* Pods-Skillbox_m10 (Maps).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
